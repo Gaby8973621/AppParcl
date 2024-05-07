@@ -13,7 +13,12 @@ export class MainPage implements OnInit {
 
   pages = [
     { title: 'Inicio', url: '/main/home', icon: 'home-outline'},
-    { title: 'perfil', url: '/main/profile', icon: 'person-outline'}
+    { title: 'perfil', url: '/main/profile', icon: 'person-outline'},
+    { title: 'Registro Constancia', url: '/main/registrconstancias', icon: 'person-outline'},
+    { title: 'Detalle Constancia', url: '/main/detall-constancia', icon: 'person-outline'},
+    { title: 'Grafico', url: '/main/grafico', icon: 'person-outline'},
+    { title: 'Docente', url: '/main/docente', icon: 'person-outline'},
+    { title: 'Notas', url: '/main/notas', icon: 'person-outline'}
   ]
 
   router = inject(Router);

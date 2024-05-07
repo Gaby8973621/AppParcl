@@ -18,8 +18,30 @@ const routes: Routes = [
         loadChildren: () =>
           import('./profile/profile.module').then((m) => m.ProfilePageModule),
       },
+      {
+        path: 'registrconstancias',
+        loadChildren: () => import('./registrconstancias/registrconstancias.module').then( m => m.RegistrconstanciasPageModule)
+      },
+      {
+        path: 'detall-constancia',
+        loadChildren: () => import('./detall-constancia/detall-constancia.module').then( m => m.DetallConstanciaPageModule)
+      },
+      {
+        path: 'grafico',
+        loadChildren: () => import('./grafico/grafico.module').then( m => m.GraficoPageModule)
+      },
+      {
+        path: 'docente',
+        loadChildren: () => import('./docente/docente.module').then( m => m.DocentePageModule)
+      },
+      {
+        path: 'notas',
+        loadChildren: () => import('./notas/notas.module').then( m => m.NotasPageModule)
+      }
     ],
-  },
+  }
+
+
 ];
 
 @NgModule({
